@@ -1,0 +1,118 @@
+html, body {
+    margin:  0;
+    font-family: 'Montserrat';
+}
+
+.window {
+    cursor: crosshair;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: url(maps/0/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    border: 3px solid white;
+  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+
+#i2 {
+    top: 50%;
+    left: 50%;
+}
+
+/* menu */
+.menu_window {
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(maps/0/bg.jpg);
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+
+    transition: .4s;
+}
+
+.menu_wrapper {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 400px;
+    padding: 10px;
+}
+
+.menu_item {
+    transition: .4s;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+}
+
+.menu_item:hover {
+    background-color: white;
+    color: black;
+}
+
+.play_button {
+    cursor: pointer;
+    align-self: flex-end;
+    padding: 20px 40px;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: aqua;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.settings_wrapper {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 30px;
+}
+
+.settings_radius {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings_radius__item {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    font-size: 24px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+}
+
+.settings_radius__heading {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
