@@ -7,21 +7,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <script src="tempVars.js"></script>
-    <script src="main.js" defer></script>
+    <script src="mapsData.js"></script>
     <script src="menu.js" defer></script>
+    <script src="main.js" defer></script>
+    
     <title>Document</title>
 </head>
 <body>
     <div class="menu_window">
         <div class="menu_wrapper">
+            <div class="settings_heading">
+                choose track
+            </div>
             
         </div>
         <div class="settings_wrapper">
-            <div class="settings_radius__heading">Choose size of circles</div>
+            <div class="settings_heading">Choose size of circles</div>
             <div class="settings_radius">
                <div onclick="changeCircleRadius(event,'50')" style="width: 50px; height: 50px;" class="settings_radius__item">50</div>
                <div onclick="changeCircleRadius(event,'100')" style="width: 100px; height: 100px;" class="settings_radius__item">100</div>
                <div onclick="changeCircleRadius(event,'150')" class="settings_radius__item">150</div>
+            </div>
+            <div class="settings_heading">
+                Choose time between clicks
+            </div>
+            <div class="settings_time">
+                <div onclick="changeSpeed(event, 500)" class="settings_time__item">
+                    0.5s
+                </div>
+                <div onclick="changeSpeed(event, 1000)" class="settings_time__item">
+                    1s
+                </div>
+                <div onclick="changeSpeed(event, 1500)" class="settings_time__item">
+                    1.5s
+                </div>
             </div>
         </div>
         <div onclick="startGame()" class="play_button">
@@ -30,6 +49,24 @@
     </div>
 
     <div class="window">
+        <div class="info_wrapper">
+            <div class="stats">
+                <div class="stats_heading">
+                    AIM: 
+                </div>
+                <div class="aim">
+
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stats_heading">
+                    Circles per minute: 
+                </div>
+                <div class="speed">
+
+                </div>
+            </div>
+        </div>
         
         <div id="first_item" class="item">
 
